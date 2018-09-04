@@ -1,5 +1,24 @@
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
 
+counter = 1
+x = 0
+y = 1
+z = 2
+total = 0
+
+while n > counter:
+    temp = x
+    x = y
+    print("This is x:", x)
+    y = z
+    print("This is y:", y)
+    z = temp + x + y
+    print("This is z:", z)
+    total = x + y + z
+    print("This is total:", total)
+    print("-----")
+
+    counter += 1
 
 
 """ Design an algorithm that generates the first n numbers in the following sequence:; 1, 2, 3, 6, 11, 20, 37, ___, ___, ___, …
