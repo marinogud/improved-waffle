@@ -1,22 +1,20 @@
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
 
-counter = 1
-x = 0
-y = 1
-z = 2
-total = 0
+counter = 0
+x = 1
+y = 2
+z = 3
 
-while n > counter:
+print(x)
+print(y)
+print(z)
+
+while n > counter + 3 :
     temp = x
     x = y
-    print("This is x:", x)
     y = z
-    print("This is y:", y)
     z = temp + x + y
-    print("This is z:", z)
-    total = x + y + z
-    print("This is total:", total)
-    print("-----")
+    print(z)
 
     counter += 1
 
